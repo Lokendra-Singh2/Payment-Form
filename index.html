@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <div class="container"> 
+    <form action="connect.php" method="post">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+
+        <p>Name: * 
+            <input type="text" name="" id="" name="name" required placeholder="aman singh"></p>
+        <fieldset>
+            <legend>Gender *</legend>
+
+        <p>
+            Male <input type="radio" name="gender" id="male" required value="m">
+            Female <input type="radio" name="gender" id="female" required value="f">
+        </p>
+    
+    </fieldset>
+         
+        
+    <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter Your Adderess"></textarea></p>
+
+    <p>Email: <input type="email" name="email" id="email" placeholder="tomandjerry@gmail.com"></p>
+
+    <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+
+    <h2>Payment Information</h2>
+    <div class="col-md-6 text-right">
+    <img src="https://www.theshelbyreport.com/wp-content/uploads/2018/01/21558844_2173448309347840_2.jpg" width="4%" height="4%">
+    <img src="http://www.pngall.com/wp-content/uploads/2016/07/Mastercard-PNG.png" width="4%" height="4%">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/RuPay-Logo.png" width="4%" height="4%">
+    </div>
+    <p>Accepted Cards</p>
+
+    <p>Card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">---Select a Card Type---</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="master card">Master Card</option>
+        </select>
+    </p>
+
+    <p>
+        Card Number: <input type="number" name="card number" id="card number" placeholder="1111-2222-3333-4444">
+    </p>
+
+    <p>
+        Expiration Date: * <input type="date" name="exp_date" id="exp_date" required>
+    </p>
+
+    <p>
+        CVV: * <input type="password" name="cvv" id="cvv" required placeholder="123">
+    </p>
+
+    <input type="submit" value="Pay Now">
+
+    </form>
+    </div>
+
+</body>
+</html>
